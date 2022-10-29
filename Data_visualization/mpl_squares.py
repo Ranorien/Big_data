@@ -4,7 +4,10 @@ def main():
     input_values = [1, 2, 3, 4, 5]
     squares = [1, 4, 9, 16, 25]
 
-    fig, ax = plt.subplots()
+
+    # set window size and title
+    fig, ax = plt.subplots(figsize=(10, 5), num='Matplotlib Squares')
+
 
     # draw line
     ax.plot(input_values, squares, linewidth = 3)
@@ -36,7 +39,7 @@ def main():
     ax.axis([0, 10, 0, 110])
 
     # save plot in image file
-    plt.savefig('plot.png', bbox_inches = 'tight')
+    plt.savefig('mpl_squares.png', bbox_inches = 'tight')
 
     # show plot
     plt.show()
