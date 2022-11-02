@@ -5,14 +5,14 @@ from plotly.graph_objs import Bar, Layout
 from plotly import offline
 
 class Die():
-    """class for dice"""
+    """class for die"""
 
     def __init__(self, num_sides = 6):
         """initialization"""
         self.num_sides = num_sides
 
     def roll(self):
-        """roll the dice"""
+        """roll the die"""
         return randint(1, self.num_sides)
 
 
@@ -39,7 +39,7 @@ def main():
     y_axis_config = {'title': 'Frequency of Result'}
 
     my_layout = Layout(title = 'Results of rolling a D6 and D10 dice 50 000 times', xaxis = x_axis_config, yaxis = y_axis_config)
-    offline.plot({'data': data, 'layout': my_layout}, filename = 'plt_dice_roll_model.html')   
+    offline.plot({'data': data, 'layout': my_layout}, filename = 'plt_dice_roll_model.html')
 
 if __name__ == '__main__':
     main()
