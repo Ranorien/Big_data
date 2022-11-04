@@ -41,6 +41,7 @@ def main():
         }
     }
 
+
     my_layout = Layout(title = 'Global Earthquakes')
     fig = {'data': pltdata, 'layout': my_layout}
 
