@@ -3,8 +3,8 @@ from plotly import offline
 
 def main():
     
-    language = 'c++'
-    url = f'https://api.github.com/search/repositories?q={language}:c++&sort=stars'
+    language = 'python'
+    url = f'https://api.github.com/search/repositories?q=language:{language}&sort=stars'
     headers = {'Accept': 'application/vnd.github.v3+json'}
     r = requests.get(url, headers=headers)
     
